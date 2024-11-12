@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/css/create_account.css" />
+    <title>Create Account</title>
+  </head>
+  <body>
+    <img src="/images/logo.png" alt="Bank Logo" class="logo" />
+    <h1>Create Account</h1>
+    <form action="/create_account" method="POST" class="create-account-form">
+      <input type="hidden" name="name" value="<%= name %>" />
+      <input type="hidden" name="aadharNumber" value="<%= aadharNumber %>" />
+      <input type="hidden" name="accountType" value="<%= accountType %>" />
+
+      <label for="initialBalance">Initial Balance:</label>
+      <input
+        type="number"
+        name="initialBalance"
+        id="initialBalance"
+        step="0.01"
+        required
+      />
+
+      <button type="submit" class="submit-button">Create Account</button>
+    </form>
+  </body>
+</html>

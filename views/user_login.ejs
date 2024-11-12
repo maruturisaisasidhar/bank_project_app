@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/css/user_login.css" />
+    <title>User Login</title>
+  </head>
+  <body>
+    <img src="/images/logo.png" alt="Bank Logo" class="logo" />
+    <h1>User Login</h1>
+    <form action="/user_login" method="POST" class="login-form">
+      <label for="accountType">Account Type:</label>
+      <select name="accountType" id="accountType" required>
+        <option value="savings">Savings</option>
+        <option value="fixed_deposit">Fixed Deposit</option>
+        <option value="mutual_fund">Mutual Fund</option>
+        <!-- Add more account types if needed -->
+      </select>
+
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" required />
+
+      <label for="aadharNumber">Aadhar Number:</label>
+      <input type="text" name="aadharNumber" id="aadharNumber" required />
+
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+  </body>
+</html>

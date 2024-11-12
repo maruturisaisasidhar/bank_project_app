@@ -1,0 +1,66 @@
+/* account_details.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.logo {
+  width: 140px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 26px;
+  color: #003366;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.account-details-table {
+  width: 90%;
+  max-width: 650px;
+  border-collapse: collapse;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+  background-color: #ffffff;
+}
+
+.account-details-table th,
+.account-details-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.account-details-table th {
+  background-color: #003366;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.account-details-table tr:nth-child(even) td {
+  background-color: #f1f1f1;
+}
+
+.back-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #003366;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.back-link:hover {
+  background-color: #002244;
+}

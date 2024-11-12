@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/css/manager_dashboard.css" />
+    <title>Manager Dashboard</title>
+  </head>
+  <body>
+    <img src="/images/logo.png" alt="Bank Logo" class="logo" />
+    <h1>Manager Dashboard</h1>
+    <table class="dashboard-table">
+      <tr>
+        <th>Account Type</th>
+        <th>Total Accounts</th>
+        <th>Total Balance</th>
+      </tr>
+      <% results.forEach(account => { %>
+      <tr>
+        <td><%= account.account_type %></td>
+        <td><%= account.total_accounts %></td>
+        <td><%= account.total_balance %></td>
+      </tr>
+      <% }) %>
+    </table>
+  </body>
+</html>
